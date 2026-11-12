@@ -41,7 +41,8 @@ public class Astronaut {
         bounce();
         xpos = xpos + dx;
         ypos = ypos + dy;
-        System.out.println(xpos);
+        System.out.println("xpos is "+ xpos);
+        System.out.println("ypos is "+ypos);
 
  
     }//end of move

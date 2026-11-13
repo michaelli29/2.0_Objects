@@ -28,8 +28,8 @@ public class Astronaut {
     public Astronaut(int pXpos, int pYpos) {
         xpos = pXpos;
         ypos = pYpos;
-        dx =6;
-        dy =5;
+        dx =10;
+        dy =10;
         width = 160;
         height = 160;
         isAlive = true;
@@ -41,8 +41,9 @@ public class Astronaut {
         bounce();
         xpos = xpos + dx;
         ypos = ypos + dy;
-        System.out.println("xpos is "+ xpos);
-        System.out.println("ypos is "+ypos);
+//        System.out.println("xpos is "+ xpos);
+//        System.out.println("ypos is "+ypos);
+
 
  
     }//end of move

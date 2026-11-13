@@ -46,6 +46,7 @@ public class BasicGameApp implements Runnable {
    //These are things that are made up of more than one variable type
 	public Astronaut astro;
 	public Astronaut astro2;
+	public Astronaut astro3;
 
 
    // Main method definition
@@ -69,6 +70,9 @@ public class BasicGameApp implements Runnable {
 		astroPic = Toolkit.getDefaultToolkit().getImage("astronaut.png"); //load the picture
 		astro = new Astronaut(10,100);
 		astro2 = new Astronaut(100,100);
+		astro3= new Astronaut((int)(Math.random()*700),(int)(Math.random()*60));
+		astro3.dx=(int)(Math.random()*10)+1;
+		astro3.dy=(int)(Math.random()*10)+1;
 		astro.dx=25;
 		astro.dy=(int)(Math.random()*10)+1;
 		System.out.println("dx speed is "+astro.dx);
@@ -104,6 +108,7 @@ public class BasicGameApp implements Runnable {
       //calls the move( ) code in the objects
 		astro.move();
 		astro2.move();
+		astro3.move();
 
 	}
 	
@@ -159,6 +164,7 @@ public class BasicGameApp implements Runnable {
 		g.drawImage(astroPic, astro.xpos, astro.ypos, astro.width, astro.height, null);
 
 		g.drawImage(astroPic, astro2.xpos, astro2.ypos, astro2.width, astro2.height, null);
+		g.drawImage(astroPic, astro3.xpos, astro3.ypos, astro3.width, astro3.height, null);
 
 
 		//end coding here

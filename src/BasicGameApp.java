@@ -12,6 +12,8 @@
 //import java.awt.Canvas;
 
 //Graphics Libraries
+import org.w3c.dom.ls.LSOutput;
+
 import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 import java.awt.*;
@@ -48,6 +50,7 @@ public class BasicGameApp implements Runnable {
 	public Astronaut astro;
 	public Astronaut astro2;
 	public Astronaut astro3;
+	public boolean touching;
 
 
    // Main method definition
@@ -120,7 +123,10 @@ public class BasicGameApp implements Runnable {
 			System.out.println("crash");
 			astro.dx=-astro.dx;
 			astro2.dx=-astro2.dx;
-
+			astro.height = astro.height + 10;
+			astro.width = astro.width + 10;
+			astro2.height = astro2.height + 10;
+			astro2.width = astro2.width + 20;
 		}//end of if
 
 	}//end of crashing
